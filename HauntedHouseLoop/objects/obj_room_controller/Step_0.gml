@@ -14,6 +14,8 @@ if (obj_player.y > 240) && (obj_player.x < 241) && (!has_switched)
 	_inst.door_pos = 1;
 	
 	obj_player.y += 50;
+	obj_darkness_controller.image_alpha = 0.0;
+	
 	has_switched = true;
 }
 
@@ -25,6 +27,8 @@ if (obj_player.y > 240) && (obj_player.x > 240) && (has_switched)
 	_inst.door_pos = 2;
 	
 	obj_player.x += 20;
+	obj_darkness_controller.image_alpha = 0.0;
+	
 	has_switched = false;
 }
 
@@ -36,6 +40,8 @@ if (obj_player.y < 241) && (obj_player.x > 240) && (!has_switched)
 	_inst.door_pos = 3;
 	
 	obj_player.y -= 20;
+	obj_darkness_controller.image_alpha = 0.0;
+	
 	has_switched = true;
 }
 
@@ -46,6 +52,8 @@ if (obj_player.y < 241) && (obj_player.x < 241) && (has_switched)
 	var _inst = instance_create_layer(door4_x, door4_y, "Wall_door", obj_door_front);
 	_inst.door_pos = 4;
 	
-	obj_player.x -= 30;
+	obj_player.x -= 35;
+	obj_darkness_controller.image_alpha = 0.0;
+	
 	has_switched = false;
 }
