@@ -39,7 +39,7 @@ if (h_speed == 0) && (v_speed == 0)
 }
 else
 {
-	image_speed = 2;	
+	image_speed = 1;	
 }
 
 //check diagonal movement
