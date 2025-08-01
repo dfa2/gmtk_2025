@@ -32,15 +32,28 @@ if (_move_right)
 	sprite_index = spr_player_right;
 }
 
+
 if (h_speed == 0) && (v_speed == 0)
 {
 	image_speed = 0;	
 	image_index = 1;
+	
+	audio_stop_sound(sfx_walk_concrete);
 }
 else
 {
 	image_speed = 1;	
+	
+	if (walk_sfx_timer < 1)
+	{
+		audio_stop_sound(sfx_walk_concrete);
+		audio_play_sound(sfx_walk_concrete, 1, false);
+		
+		walk_sfx_timer = walk_sfx_timer_max;
+	}
 }
+
+walk_sfx_timer -= 1;
 
 //check diagonal movement
 if (_move_up || _move_down) && (_move_left || _move_right)

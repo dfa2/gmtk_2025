@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_tiles_cellar",
-    "path":"sprites/spr_tiles_cellar/spr_tiles_cellar.yy",
+    "name":"spr_cellar_tiles_02",
+    "path":"sprites/spr_cellar_tiles_02/spr_cellar_tiles_02.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
