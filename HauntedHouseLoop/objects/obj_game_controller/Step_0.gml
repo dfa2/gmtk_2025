@@ -1,10 +1,12 @@
 if (game_over)
 {
-	show_message("GAME OVER");
+	audio_play_sound(sfx_gameover, 1, 0);
+	room_goto(GAMEOVER);
 }
 
 if (game_win)
 {
-	
-	show_message("GAME WIN");
+	audio_stop_sound(bgm_ouroboros_hall);
+	audio_play_sound(sfx_game_win, 1, 0);
+	room_goto(GAMEWIN);
 }

@@ -1,4 +1,4 @@
-//image_alpha += darkening_spd;
+image_alpha += darkening_spd;
 
 if (image_alpha == 1.0)
 {

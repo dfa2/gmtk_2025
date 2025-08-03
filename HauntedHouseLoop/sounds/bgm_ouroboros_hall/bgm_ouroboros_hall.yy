@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_dish",
+  "%Name":"bgm_ouroboros_hall",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.18197279,
-  "name":"sfx_dish",
+  "duration":57.62612,
+  "name":"bgm_ouroboros_hall",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_dish.wav",
+  "soundFile":"bgm_ouroboros_hall.mp3",
   "type":0,
-  "volume":0.65,
+  "volume":1.0,
 }
