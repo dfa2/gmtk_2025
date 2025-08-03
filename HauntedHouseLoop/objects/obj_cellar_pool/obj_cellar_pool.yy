@@ -12,7 +12,10 @@
     "name":"cellar",
     "path":"folders/Objects/cellar.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_impassable",
+    "path":"objects/obj_impassable/obj_impassable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

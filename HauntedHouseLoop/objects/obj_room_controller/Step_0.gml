@@ -12,6 +12,7 @@ if (obj_player.y > 240) && (obj_player.x < 241) && (!has_switched)
 	
 	var _inst = instance_create_layer(door1_x, door1_y, "Wall_door", obj_door_front);
 	_inst.door_pos = 1;
+	//_inst.sprite_index = spr_cellar_door;
 	
 	obj_player.y += 50;
 	obj_darkness_controller.image_alpha = 0.0;

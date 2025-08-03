@@ -12,7 +12,10 @@
     "name":"cellar",
     "path":"folders/Objects/cellar.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_impassable",
+    "path":"objects/obj_impassable/obj_impassable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gg_04_off",
-    "path":"sprites/spr_gg_04_off/spr_gg_04_off.yy",
+    "name":"spr_gg_yellow",
+    "path":"sprites/spr_gg_yellow/spr_gg_yellow.yy",
   },
   "spriteMaskId":null,
   "visible":true,

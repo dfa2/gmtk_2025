@@ -1,1 +1,1 @@
-image_alpha += darkening_spd;
+//image_alpha += darkening_spd;
