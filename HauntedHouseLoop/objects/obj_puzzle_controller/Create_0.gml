@@ -1,4 +1,9 @@
-cellar_completed = false; //done
-library_completed = false; //done
+cellar_completed = false;
+library_completed = false; 
 dining_completed = false;
 concert_completed = false;
+
+cellar_played = false;
+library_played = false;
+dining_played = false;
+concert_played = false;

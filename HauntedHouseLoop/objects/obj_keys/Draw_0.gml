@@ -1,7 +1,7 @@
 draw_sprite_ext(
     sprite_index,
     image_index,
-    300,
+    270,
     96,
     image_xscale,
     image_yscale,

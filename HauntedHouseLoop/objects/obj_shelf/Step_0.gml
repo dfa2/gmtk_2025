@@ -21,6 +21,7 @@ if(place_meeting(x, y, obj_player_interaction)) && (obj_player.curr_facing = Fac
 	{
 		//activate book
 		book_highlighted.visible = true;
+		audio_play_sound(sfx_dish, 1, 0);
 		
 		ds_list_add(obj_lib_puzzle_controller.highlighted_books, book_highlighted);
 		ds_list_add(obj_lib_puzzle_controller.chosen_books, book);

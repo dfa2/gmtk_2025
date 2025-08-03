@@ -7,16 +7,23 @@ var _play_E = keyboard_check_pressed(ord("E"));
 var _play_F = keyboard_check_pressed(ord("F"));
 var _play_G = keyboard_check_pressed(ord("G"));
 
-if (_interact) && (place_meeting(x, y, obj_player_interaction))
+if (place_meeting(x, y, obj_player_interaction))
 {
-	keys.visible = true;
-	song_sheet.visible = true;
+	selector.visible = true;
+	
+	if (_interact) && (keys.visible == false)
+	{
+		audio_play_sound(sfx_paper, 1, 0);
+		keys.visible = true;
+		song_sheet.visible = true;
+	}
 }
 
 if (!place_meeting(x, y, obj_player_interaction))
 {
 	keys.visible = false;
 	song_sheet.visible = false;
+	selector.visible = false;
 	
 	played_notes = "";
 }

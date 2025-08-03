@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_note_large",
-    "path":"sprites/spr_note_large/spr_note_large.yy",
+    "name":"spr_note_huge",
+    "path":"sprites/spr_note_huge/spr_note_huge.yy",
   },
   "spriteMaskId":null,
   "visible":true,

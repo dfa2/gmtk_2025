@@ -1,17 +1,30 @@
 var _interact = keyboard_check_released(vk_space);
 
-if (_interact) && (place_meeting(x, y, obj_player_interaction))
+if(place_meeting(x, y, obj_player_interaction))
 {
-	obj_water_lane_red.on_off++;
-	obj_water_lane_green.on_off++;
-	obj_water_lane_yellow.on_off++;
+	selector.visible = true;
 	
-	if (image_index = 0)
+	if (_interact)
 	{
-		image_index = 1;	
+		obj_water_lane_yellow.on_off++;
+		obj_water_lane_green.on_off++;
+		obj_water_lane_red.on_off++;
+	
+		if (image_index = 0)
+		{
+			image_index = 1;
+			audio_stop_sound(sfx_lever);
+			audio_play_sound(sfx_lever, 1, 0);	
+		}
+		else
+		{
+			image_index = 0;	
+			audio_stop_sound(sfx_lever);
+			audio_play_sound(sfx_lever, 1, 0);
+		}
 	}
-	else
-	{
-		image_index = 0;	
-	}
+}
+else
+{
+	selector.visible = false;	
 }

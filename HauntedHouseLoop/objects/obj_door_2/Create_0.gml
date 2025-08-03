@@ -1,0 +1,1 @@
+blocker = instance_create_layer(x, y, "Wall_door", obj_blocker);

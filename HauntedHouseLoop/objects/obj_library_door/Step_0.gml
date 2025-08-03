@@ -6,6 +6,7 @@ if (_interact) && (place_meeting(x, y, obj_player_interaction))
 
 	blocker_3.x = -40;
 	blocker_3.y = -40;
+	audio_play_sound(sfx_door_open, 1, false);
 }
 
 if (obj_player.y < y - 30)
